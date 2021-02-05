@@ -223,7 +223,7 @@ h1 {
     height: 350px;
 }
 .main .text {
-    margin-left: -500px;
+    margin-left: -400px;
 }
 .main .text h4 {
     font-size: 16px;
@@ -327,6 +327,69 @@ h1 {
     font-weight: bold;
 }
 /*end contact section*/
+/*start projects*/
+.card-work {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.card-work img {
+    width: 100%;
+    height: 220px;
+}
+.card-work .corner {
+    position: absolute;
+    top: 0px;
+    right: -8%;
+    font-size: 15px;
+    width: 200px;
+    background-color: var(--primaryOne);
+    transform: rotate(40deg);
+    padding-left: 40px;
+    color: var(--primaryTwo);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.card-work .corner-not {
+    position: absolute;
+    top: 0px;
+    right: -8%;
+    font-size: 14px;
+    width: 200px;
+    background-color: var(--secondarythree);
+    transform: rotate(40deg);
+    padding-left: 40px;
+    color: var(--primaryFour);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-work button {
+    border: 2px solid var(--primaryOne);
+    background-color: var(--primaryTwo);
+    outline: 0;
+    padding: 12px;
+    color: var(--primaryThree);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+.card-work button a{
+    color: var(--primaryThree);
+    text-decoration: none;
+}
+.card-work button:hover {
+    background-color: var(--primaryOne);
+    color: var(--primaryTwo);
+    transition: 0.5s;
+}
+.card-work p:first-of-type {
+    height: 90px;
+}
+/*end projects*/
 .cv {
     position: absolute;
     margin-left: 470px; /* Same as the width of the sidenav */
@@ -539,16 +602,16 @@ h1 {
     }
 .main {
     margin-left: 36%;
-    top: 0%;
+    top: -6%;
     
 }
 .main .pic img {
-    margin-top: 15%;
+    margin-top: 20%;
     width: 350px;
     height: 350px;
 }
 .main .text {
-    margin-left: -5%;
+    margin-left: -6%;
     margin-top: 6%;
 }
 
@@ -606,7 +669,7 @@ h1 {
     height: 400px;
 }
 .main .text {
-    margin-left: 2%;
+    margin-left: 1%;
     margin-top: 6%;
     width: 500px;
 }
@@ -655,7 +718,7 @@ h1 {
     }
 .main {
     margin-left: 35%;
-    top: 35%;
+    top: 10%;
     
 }
 .main .pic img {
