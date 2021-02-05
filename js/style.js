@@ -46,3 +46,7 @@ $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
 
+$(document).ready(function () {
+  setInterval(function(){ $("#text-one").toggleClass("hidden"); }, 2200);
+  setInterval(function(){ $("#text-two").toggleClass("hidden"); }, 2200);
+    });
