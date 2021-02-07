@@ -9,7 +9,6 @@
     --secondarythree: #d5d5d5;
 }
 /*colors*/
-/* Fixed sidenav, full height */
 body {
     overflow-x: hidden;
     
@@ -33,6 +32,49 @@ h1 {
 .m-s {
     margin-bottom: 3%;
 }
+/*animation*/
+/*
+@keyframes exampleImg {
+  0%   {  border-color: var(--primaryOne);}
+  100% {  border-color: var(--primaryTwo);}
+}
+@keyframes exampleImgIn {
+  0%   {  opacity: 0; top: 200px;}
+  100% {  opacity: 1; top: 0px}
+}
+@keyframes exampleTextIn {
+  from {left: 100%}
+  to {left: 0%;}
+}
+@keyframes exampleImgOut {
+  from {right: 0%}
+  to {right: 100%;}
+}
+@keyframes exampleTextOut {
+  from {left: 0%}
+  to {left: 100%;}
+}
+@keyframes exampleWork {
+  0%   {  opacity: 0; top: 200px;}
+  100% {  opacity: 1; top: 0%;}
+}
+
+@keyframes exampleWorkOut {
+  from {opacity: 1}
+  to {opacity: 0;}
+}
+@keyframes cv {
+  from {transform: scale(0)}
+  to {transform: scale(1);}
+}
+@keyframes cvOut {
+  from {transform: scale(1)}
+  to {transform: scale(0);}
+}
+*/
+/*animation*/
+
+
 /*start navbar*/
 .navbar {
     z-index: 999;
@@ -212,8 +254,19 @@ h1 {
     position: absolute;
     padding: 0px 10px;
     top: 5%;
+    animation-name: exampleWork;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    animation-duration: 1s;
 }
 
+.main .pic {
+    animation-name: exampleImgIn;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+}
 .main .pic img {
     border-radius: 50%;
     border: 17px solid var(--primaryTwo);
@@ -221,10 +274,21 @@ h1 {
     box-shadow: 0 0px 25px 0px rgba(0, 0, 0, 0.1);
     width: 350px;
     height: 350px;
+    animation-name: exampleImg;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+     animation-delay: 0.2s;
+    animation-duration: 1.5s;
 }
 .main .text {
     margin-left: -400px;
+    animation-name: exampleTextIn;
+    animation-timing-function: ease;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+    animation-duration: 1s;
 }
+
 .main .text h4 {
     font-size: 16px;
     color: var(--secondaryTwo);
@@ -328,6 +392,7 @@ h1 {
 }
 /*end contact section*/
 /*start projects*/
+
 .card-work {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 800px;
@@ -441,6 +506,11 @@ h1 {
     position: absolute;
     padding: 0px 20px;
     top: 5%;
+    animation-name: cv;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    animation-duration: 1s;
 }
 .cv .card-cv {
     max-width: 800px;
@@ -488,12 +558,23 @@ h1 {
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
+@keyframes example {
+  from   {width: 0%;}
+  to {width: 100%;}
+    }
+
 .card-cv .progress {
     height: 18px;
     border-radius: 9px;
+    animation-name: example;
+    animation-timing-function: ease;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    animation-duration: 3s;
 }
 .progress-bar {
     background-color: var(--primaryOne);
+
 }
 .card-cv .progress .bar-p {
     color: var(--primaryTwo);
@@ -522,6 +603,7 @@ h1 {
   .main {
       margin-left: 0px;
       top: 10%;
+      
     }
     .main .pic img {
         margin-top: 20px;
@@ -728,6 +810,7 @@ h1 {
     margin-left: 36%;
     top: -6%;
     
+    
 }
 .main .pic img {
     margin-top: 20%;
@@ -786,11 +869,13 @@ h1 {
     margin-left: 36%;
     top: 3%;
     
+    
 }
 .main .pic img {
     margin-top: 15%;
     width: 400px;
     height: 400px;
+    
 }
 .main .text {
     margin-left: 1%;
