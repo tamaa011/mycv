@@ -32,12 +32,13 @@ h1 {
 .m-s {
     margin-bottom: 3%;
 }
-/*animation*/
-/*
 @keyframes exampleImg {
   0%   {  border-color: var(--primaryOne);}
   100% {  border-color: var(--primaryTwo);}
 }
+/*animation*/
+/*
+
 @keyframes exampleImgIn {
   0%   {  opacity: 0; top: 200px;}
   100% {  opacity: 1; top: 0px}
@@ -155,6 +156,7 @@ h1 {
 }
 .sidenav .sec-side .content img {
     border-radius: 50%;
+    border: 3px solid var(--primaryTwo);
 }
 .sidenav .sec-side .content h1 {
     color: var(--primaryTwo);
@@ -254,19 +256,8 @@ h1 {
     position: absolute;
     padding: 0px 10px;
     top: 5%;
-    animation-name: exampleWork;
-    animation-timing-function: ease;
-    animation-delay: 0.5s;
-    animation-fill-mode: both;
-    animation-duration: 1s;
 }
 
-.main .pic {
-    animation-name: exampleImgIn;
-    animation-timing-function: ease;
-    animation-fill-mode: both;
-    animation-duration: 1s;
-}
 .main .pic img {
     border-radius: 50%;
     border: 17px solid var(--primaryTwo);
@@ -277,16 +268,11 @@ h1 {
     animation-name: exampleImg;
     animation-timing-function: ease;
     animation-fill-mode: both;
-     animation-delay: 0.2s;
+     animation-delay: 0.5s;
     animation-duration: 1.5s;
 }
 .main .text {
     margin-left: -400px;
-    animation-name: exampleTextIn;
-    animation-timing-function: ease;
-    animation-delay: 0.2s;
-    animation-fill-mode: both;
-    animation-duration: 1s;
 }
 
 .main .text h4 {
@@ -506,11 +492,6 @@ h1 {
     position: absolute;
     padding: 0px 20px;
     top: 5%;
-    animation-name: cv;
-    animation-timing-function: ease;
-    animation-delay: 0.5s;
-    animation-fill-mode: both;
-    animation-duration: 1s;
 }
 .cv .card-cv {
     max-width: 800px;

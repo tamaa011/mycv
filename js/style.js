@@ -1,83 +1,44 @@
 $(".me").click(function(){
+//    $(".work-examples").removeClass("slideInRight");
+//    $(".work-examples").addClass("slideOutRight");
+//    $(".main-page").removeClass("bounceOut");
+//    $(".main-page").addClass("bounceIn");
     $(".main-page").removeClass("hidden");
     $(".me i").addClass("active");
-    $(".work i").removeClass("active");
+    $(".works i").removeClass("active");
     $(".cv-cv i").removeClass("active");
     $(".contact-c i").removeClass("active");
-    $(".work-examples").delay(500).queue(function(next){
-        $(this).addClass("hidden");
-        next();
-    });
-    $(".cv").delay(500).queue(function(next){
-        $(this).addClass("hidden");
-        next();
-    });
+    $(".work-examples").addClass("hidden");
+    $(".cv").addClass("hidden");
     $(".contact").addClass("hidden");
   });
 
-$(".work").click(function(){
-    $(".main .text").css("animation-name", "exampleTextOut");
-    $(".main .pic").css("animation-name", "exampleImgOut");
-    $(".main .text").removeAttr( "exampleTextIn");
-    $(".main .pic").removeAttr( "exampleImgIn");
+$(".works").click(function(){
+//    $(".work-examples").removeClass("slideOutRight");
+//    $(".main-page").addClass("bounceOut");
+//    $(".work-examples").addClass("slideInRight");
     
-    $(".main .text").css("animation-delay", "0s");
-    $(".main .pic").css("animation-delay", "0s");    
-
-    $(".work-examples").css("animation-name", "exampleWork");
-    $(".work-examples").css("animation-delay", "0.5s");
-    $(".cv").removeAttr( "cv");
-    $(".cv").css("animation-name", "cvOut");
-    $(".cv").css("animation-delay", "0s");
-    
-    $(".cv").delay(500).queue(function(next){
-        $(this).addClass("hidden");
-        next();
-    });
+    $(".cv").addClass("hidden");
     $(".contact").addClass("hidden");
-    $(".work i").addClass("active");
+    $(".works i").addClass("active");
     $(".me i").removeClass("active");
     $(".cv-cv i").removeClass("active");
     $(".contact-c i").removeClass("active");
-    $(".main-page").delay(500).queue(function(next){
-        $(this).addClass("hidden");
-        next();
-    });
+    $(".main-page").addClass("hidden");
     $(".work-examples").removeClass("hidden");
   });
 
 $(".cv-cv").click(function(){
-    
-    $(".main .text").css("animation-name", "exampleTextOut");
-    $(".main .pic").css("animation-name", "exampleImgOut");
-    $(".main .text").removeAttr( "exampleTextIn");
-    $(".main .pic").removeAttr( "exampleImgIn");
-    
-    $(".main .text").css("animation-delay", "0s");
-    $(".main .pic").css("animation-delay", "0s");  
-    
-    $(".work-examples").css("animation-name", "exampleWorkOut");
-    $(".work-examples").css("animation-delay", "0s");
-    $(".work-examples").removeAttr( "exampleWork");
-    
-    $(".cv").css("animation-name", "cv");
-    $(".cv").css("animation-delay", "0.5s");
-    $(".work-examples").css("animation-delay", "0s");
-    
-    $(".main-page").delay(500).queue(function(next){
-        $(this).addClass("hidden");
-        next();
-    });
-    $(".work-examples").delay(500).queue(function(next){
-        $(this).addClass("hidden");
-        next();
-    });
+//     $(".cv").addClass("bounce");
+    $(".cv").removeClass("hidden");
+    $(".main-page").addClass("hidden");
+    $(".work-examples").addClass("hidden");
     $(".contact").addClass("hidden");
     $(".cv-cv i").addClass("active");
-    $(".work i").removeClass("active");
+    $(".works i").removeClass("active");
     $(".me i").removeClass("active");
     $(".contact-c i").removeClass("active");
-    $(".cv").removeClass("hidden");
+    
   });
 
 $(".contact-c").click(function(){
