@@ -439,6 +439,7 @@ h1 {
 }
 .card-work p:first-of-type {
     height: 100px;
+    margin-bottom: 15px;
 }
 .card-more {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
