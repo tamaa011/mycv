@@ -438,7 +438,7 @@ h1 {
     transition: 0.5s;
 }
 .card-work p:first-of-type {
-    height: 90px;
+    height: 100px;
 }
 .card-more {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
